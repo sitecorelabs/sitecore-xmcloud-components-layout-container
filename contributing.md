@@ -26,12 +26,12 @@ Here are some guidelines to help you get started.
 
 ## Development
 
-The main component you will be working on is located in the `src/component/layout-container` directory.
+The main component you will be working on is located in the `src/components` directory.
 
-- `src/component/layout-container/LayoutContainer.tsx`: Main React component.
-- `src/component/layout-container/index.scss`: Main SCSS file for styling.
-- `src/component/layout-container/_functions.scss`: SCSS functions.
-- `src/component/layout-container/_variables.scss`: SCSS variables.
+- `src/components/LayoutContainer.tsx`: Main React component.
+- `src/components/assets/sass/layout-container/index.scss`: Main SCSS file for styling.
+- `src/components/assets/sass/layout-container/_functions.scss`: SCSS functions.
+- `src/components/assets/sass/layout-container/_variables.scss`: SCSS variables.
 
 
 ## Code Style

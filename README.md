@@ -1,6 +1,6 @@
-# Layout container component for Sitecore XM Cloud
+# Layout Container Component for Sitecore XM Cloud
 
-Steps to add the Layout Container Component to your repository
+Steps to add the Layout Container Component to your XMCloud project
 1.	Clone the repository
 
     Begin by cloning the following repository:
@@ -8,9 +8,11 @@ Steps to add the Layout Container Component to your repository
 
 2.	Copy serialized Items files
     
-    Copy `layoutcontainer.module.json` file from `src\layout-container`  to your repository’s `src` folder 
+    Copy `layoutcontainer.module.json` file from `src`  to your repository’s `src` folder
 
-    Copy `LayoutContainer` folder from `src\layout-container\items` folder to `Items` folder in your repository.
+    > *Ensure `layoutcontainer.module.json` path matches modules wildcard in `sitecore.json` in the root of project repository*
+
+    Copy `LayoutContainer` folder from `src\items` folder to `Items` folder in your repository
 
     > *For XM Cloud Starter Kit, items are typically located in `src/items`*
 
@@ -18,12 +20,12 @@ Steps to add the Layout Container Component to your repository
 
     3.1 Copy component
 
-    Copy `LayoutContainer.tsx` file from `src\layout-container\component` folder to your *component* folder.
+    Copy `LayoutContainer.tsx` file from `src\components` folder to your `components` folder
     > *For XM Cloud Starter Kit, components are typically located in: `src\sxastarter\src\components`*
 
     3.2	Copy styles
 
-    Copy `src\layout-container\component\layout-container` folder to your repository styles folder  
+    Copy `src\components\assets\sass\layout-container` folder to your repository *styles* folder  
     > *For XM Cloud Starter Kit, styles are typically located in: `src\sxastarter\src\assets\sass\components\`*
 
     3.3 Import styles
@@ -41,7 +43,7 @@ Steps to add the Layout Container Component to your repository
 
     For example, in XM Cloud Starter Kit 
     
-    •	Open the `up.ps1` file present at the repository root. 
+    •	Open the `up.ps1` file present at the repository root 
 
     •	Find the existing serialization command (`dotnet sitecore ser push -i RenderingHost`)
 
@@ -65,10 +67,10 @@ Steps to add the Layout Container Component to your repository
     •	Add the `Layout Container` to the `Page Structure` rendering.
      > *Path: Layout\Renderings\Feature\Headless Experience Accelerator\Layout Container*
     
-    ![Layout Container Example](/src/images/add-layout-rendering-example.png)
+    ![Layout Container Example](/guide/add-layout-rendering-example.png)
 
 6. Verify in XM Cloud Pages
 
-    •	Navigate to your site in XM Cloud Pages.
+    •	Navigate to your site in XM Cloud Pages
 
-    •	The `Layout Container` component should now appear in the `Page Structure` section.
+    •	The `Layout Container` component should now appear in the `Page Structure` section
